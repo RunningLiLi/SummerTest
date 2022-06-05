@@ -46,6 +46,7 @@ new Promise((rs,rj)=>{
         img.src=v.cover;
         rtitle.innerHTML=v.title;
         span2.innerHTML=v.views;
+        rankone.key=count;
         (v.top3).forEach((value,key) => {
             let li=document.createElement("li");
             // let xspan=document.createElement("span");
@@ -63,18 +64,34 @@ new Promise((rs,rj)=>{
    
 
 })
-// .then(()=>{
-//     let ones=document.querySelectorAll(".rankone")
-//     for(let el of ones){
-//         el.addEventListener("touchstart",()=>{
-//             console.log(1)
-//         })
+.then(()=>{
+    let ones=document.querySelectorAll(".rankone")
+    let arr=[0,1,2,3,4,5,6,7,8,9];
+    for(let el of ones){
+        let beginsite;
        
-//         el.addEventListener("touchmove",()=>{
-//             console.log(2)
-//         })
-//         el.addEventListener("touchmove",(e)=>{
-//             e.preventDefault();
-//         })
-//     }
-// })
+        el.addEventListener("touchstart",(e)=>{
+            el.style.zIndex=100
+            beginsite=e.targetTouches[0].pageY-130;
+        })
+       
+        el.addEventListener("touchmove",(e)=>{
+            el.style.top=e.targetTouches[0].pageY-185+'px'
+        })
+        el.addEventListener("touchend",(e)=>{
+           let n1=Math.floor(beginsite/130);
+           let n2=Math.floor((e.changedTouches[0].pageY-130)/130);
+           ones[arr[n1]].style.top=n2*130+'px'
+           ones[arr[n2]].style.top=n1*130+'px'
+           let temp=arr[n2];
+           arr[n2]=arr[n1];
+           arr[n1]=temp;
+           console.log(arr)
+          
+           el.style.zIndex=10
+        })
+        el.addEventListener("touchmove",(e)=>{
+            e.preventDefault();
+        })
+    }
+})

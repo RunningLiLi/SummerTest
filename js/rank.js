@@ -86,8 +86,6 @@ new Promise((rs,rj)=>{
            let temp=arr[n2];
            arr[n2]=arr[n1];
            arr[n1]=temp;
-           console.log(arr)
-          
            el.style.zIndex=10
         })
         el.addEventListener("touchmove",(e)=>{

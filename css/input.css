@@ -1,0 +1,138 @@
+.B-input{
+    display: block;  
+    margin-left: 5%;
+    width: 90%;
+    height: 30px;
+    border: none;
+    border-radius: 15px ;
+    padding-left:22px;
+    padding-right:22px;
+    outline:none;
+    box-sizing:border-box;
+    
+}
+.B-div{
+    position: relative;
+    margin-top: 120px;
+    width: 100%;
+}
+.B-font{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top:7px;
+}
+.B-font2{
+    position: absolute;
+    top:7px;
+    left: 22px;
+}
+.cancel{
+    position: absolute;
+    display: none;
+    font-weight: 1000;
+    top: 7px;
+    right: 10px;
+}
+.HotSearch{
+    width: 90%;
+    margin-left: 5%;
+    height: 300px;
+    margin-top: 20px;
+    display: none;
+}
+.HotSearch :nth-child(1){
+    font-size: 20px;
+    font-weight: 1000;
+    width: 100%;
+    height: 20px;
+}
+.HotSearch :nth-child(2){
+    margin-top: 15px;
+    width: 100%;
+    height: 280px;
+    white-space: normal;
+}
+.HotSearch :nth-child(2) span{
+    font-size: 13px;
+    color: rgb(131, 130, 130);
+    font-weight: 500;
+    display: inline-block;
+    height: 13px;
+    width: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.delete{
+    position: absolute;
+    font-size: 30px;
+    display: none;
+    top: -2px;
+    right: 70px;
+    color: rgb(78, 78, 78);
+}
+.Search{
+    display: none;
+    width: 90%;
+    margin-left: 5%;
+}
+.Search :nth-child(1){
+    margin-top: 20px;
+}
+.searchone{
+    width: 100%;
+    height: 50px;
+
+}
+.s-title{
+    font-weight: 1000;
+    font-size: 20px;
+    line-height: 25px;
+}
+.s-artist{
+    color: rgb(134, 133, 133);
+    line-height: 25px;
+    font-size: 12px;
+    text-indent: 0.2em;
+}
+.HisSearch{
+    position: relative;
+    width: 90%;
+    margin-left: 5%;
+    height: 100px;
+    margin-top: 20px;
+    display: none;
+}
+.iconshanchu{
+    position: absolute;
+    top: 0px;
+    right: 0;
+}
+.HisSearch :nth-child(1){
+    font-size: 20px;
+    font-weight: 1000;
+    width: 100%;
+    height: 20px;
+}
+.HisSearch :nth-child(2){
+    margin-top: 15px;
+    width: 100%;
+    height: 280px;
+    white-space: normal;
+}
+.HisSearch :nth-child(2) span{
+    font-size: 13px;
+    color: rgb(131, 130, 130);
+    font-weight: 500;
+    display: inline-block;
+    height: 13px;
+    width: auto;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 10px;
+}
